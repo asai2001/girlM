@@ -1,0 +1,89 @@
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Calendar Controls */
+.calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.calendar-controls label {
+    font-weight: bold;
+    color: #ff6f91;
+}
+
+.calendar-controls select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-size: 1rem;
+}
+
+.calendar-controls button {
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.calendar-controls button:hover {
+    background-color: #ff5070;
+}
+
+/* Calendar Grid */
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.calendar th {
+    color: #ff6f91;
+    padding: 10px;
+    background-color: rgba(255, 218, 225, 0.8);
+    font-weight: bold;
+}
+
+.calendar td {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(255, 218, 225, 0.9);
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calendar td:hover {
+    background-color: rgba(255, 111, 145, 0.2);
+}
+
+/* Empty Cells for Alignment */
+.calendar td:empty {
+    background-color: transparent;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Highlighted period for menstrual calendar */
+.calendar td.highlighted {
+    background-color: rgb(245, 7, 7);
+    color: white;
+    font-weight: bold;
+}

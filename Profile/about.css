@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Left Profile Card Section */
+.left-section {
+    width: 30%;
+}
+
+.profile-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    margin: 20px 0;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.follow-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.follow-btn:hover {
+    background-color: #0056b3;
+}
+
+.message-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.message-btn:hover {
+    background-color: #218838;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Right Profile Info Section */
+.right-section {
+    width: 65%;
+}
+
+.profile-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+/* Aligning Labels and Values using Flexbox */
+.info-grid .info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.info-item strong {
+    width: 35%;
+    color: #333;
+    font-weight: bold;
+}
+
+.info-item span {
+    width: 60%;
+    text-align: left;
+    color: #555;
+    word-wrap: break-word;
+}
+
+.edit-button {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.edit-button:hover {
+    background-color: #138496;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        padding: 20px;
+    }
+}

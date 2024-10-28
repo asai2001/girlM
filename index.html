@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - GirlyPOPS!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="login-container">
+    <!-- Bagian Kiri -->
+    <div class="left-side">
+        <h2>Welcome to GirlyPOPS!</h2>
+        <p class="quote">"Empower yourself with knowledge and fun!"</p>
+    </div>
+
+    <!-- Bagian Kanan (Form Login) -->
+    <div class="right-side">
+        <div class="form-container">
+            <h2>Selamat Datang</h2>
+            <p>Silakan login dengan menggunakan username dan password Anda</p>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+
+                <button type="button" onclick="login()">Login</button>
+            </form>
+            <p id="errorMessage" class="error-message"></p>
+            <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 GirlyPOPS! All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
